@@ -40,7 +40,7 @@ nav ul {
 nav ul li {
     padding: 20px;
     float: left;
-    
+
 }
 
 nav ul li a {
@@ -107,56 +107,81 @@ footer {
 
 table {
     width: 75px;
-  border-collapse: collapse; 
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  margin: 40px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 40px;
 }
 
-table th, 
+table th,
 table td {
-  
-  padding: 5px;              
-  text-align: center;         
-  vertical-align: middle;     
+
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-.IPO{
+.IPO {
     background-color: yellowgreen;
 }
-.sistemes{
+
+.sistemes {
     background-color: purple;
 }
-.Xarxes{
+
+.Xarxes {
     background-color: burlywood;
 }
-.ofimatica{
+
+.ofimatica {
     background-color: green;
 }
-.Tutoria{
+
+.Tutoria {
     background-color: blueviolet;
 }
-.ingles{
+
+.ingles {
     background-color: rgb(79, 121, 107);
 }
-.Sostenibilitat{
+
+.Sostenibilitat {
     background-color: darkorchid;
 }
-.Muntatge{
+
+.Muntatge {
     background-color: bisque;
 }
-.WEB{
+
+.WEB {
     background-color: darkslateblue;
 }
-.Digitalització{
+
+.Digitalització {
     background-color: rgb(223, 180, 117);
 }
-.dias{
-    border: 1px solid #000000; 
+
+.dias {
+    border: 1px solid #000000;
 }
 
 form {
-  display: grid;
-  grid-template-columns: max-content 220px;
-  gap: 4px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+
+
+    display: grid;
+    grid-template-columns: max-content 220px;
+    gap: 10px;
+    align-items: center;
+
+
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.contacta {
+    text-align: center;
 }
