@@ -171,16 +171,44 @@ form {
     padding: 20px;
     border-radius: 20px;
 
-
     display: grid;
-    grid-template-columns: max-content 220px;
+    grid-template-columns: 1fr; 
     gap: 10px;
     align-items: center;
 
-
-    width: fit-content;
+    width: 800px; 
+    max-width: 90%; 
     margin: 20px auto;
 }
+
+form label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button, form input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 .contacta {
     text-align: center;
