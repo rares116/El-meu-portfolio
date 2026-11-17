@@ -154,3 +154,9 @@ table td {
 .dias{
     border: 1px solid #000000; 
 }
+
+form {
+  display: grid;
+  grid-template-columns: max-content 220px;
+  gap: 4px;
+}
