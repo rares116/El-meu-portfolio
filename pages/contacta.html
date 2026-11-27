@@ -8,42 +8,103 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
-<header>
-    <nav>
-        <ul>
-            <img src="../images/Rares.png" alt="foto_de_mi_cara" class="mi_cara">
-            <li><a href="../index.html" class="actiu">Inici</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./sobre_mi.html">Sobre mi</a></li>
-            <li><a href="./Estudis.html">Estudis</a></li>
-            <li><a href="./contacta.html">contacta</a></li>
-        </ul>
-    </nav>
-</header>
-
-<h2 class="contacta">Contacta</h2>
-
 <body>
-    <form action="#" method="post">
-        <label for="nom">Nom complet</label>
-        <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom...">
+    <header>
+        <nav>
+            <ul>
+                <img src="../images/Rares.png" alt="foto_de_mi_cara" class="mi_cara">
+                <li><a href="../index.html">Inici</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./sobre_mi.html">Sobre mi</a></li>
+                <li><a href="./Estudis.html">Estudis</a></li>
+                <li><a href="./contacta.html" class="actiu">Contacta</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="email">Correu electrònic</label>
-        <input type="email" id="email" name="email" placeholder="nom@exemple.com">
+    <main class="contenidor-formulari">
+        <div class="capcalera-formulari">
+            <h1>Residència de desenvolupadors</h1>
+            <p>Omple les teves dades i el teu perfil tècnic.</p>
+        </div>
 
-        <label for="assumpte">Assumpte</label>
-        <input type="assumpte" id="assumpte" name="assumpte" placeholder="escriu el teu assumpte...">
+        <form action="#" method="post">
+            <!-- PRIMER BLOC: DADES PERSONALS -->
+            <fieldset>
+                <legend>Dades personals</legend>
 
-        <label for="missatge">Missatge</label>
-        <textarea id="missatge" name="missatge" placeholder="Escriu el teu missatge..."></textarea>
+                <label for="nom">Nom i cognoms</label>
+                <input type="text" id="nom" name="nom" required>
 
-        <button type="submit" class="boton">Enviar missatge</button>
-    </form>
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required>
 
+                <label for="telefon">Telèfon</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="9 xifres" pattern="[0-9]{9}">
 
-    <footer>© 2026 Rares Cernea - Tots els drets reservats </footer>
+                <label for="naixement">Data de naixement</label>
+                <input type="date" id="naixement" name="naixement" required>
 
+                <label for="pais">País</label>
+                <select id="pais" name="pais">
+                    <option value="" disabled selected>Tria un país</option>
+                    <option value="es">Espanya</option>
+                    <option value="ad">Andorra</option>
+                    <option value="fr">França</option>
+                </select>
+
+                <label for="ciutat">Ciutat</label>
+                <input type="text" id="ciutat" name="ciutat">
+            </fieldset>
+
+            <!-- SEGON BLOC: PERFIL TÈCNIC -->
+            <fieldset>
+                <legend>Perfil tècnic</legend>
+
+                <label for="experiencia">Anys d'experiència</label>
+                <input type="range" id="experiencia" name="experiencia" min="0" max="20" value="2">
+
+                <fieldset class="sub-grup">
+                    <legend>Llenguatges que domines</legend>
+                    <div class="opcions-linia">
+                        <label><input type="checkbox" name="llenguatges" value="html"> HTML</label>
+                        <label><input type="checkbox" name="llenguatges" value="css"> CSS</label>
+                        <label><input type="checkbox" name="llenguatges" value="js"> JavaScript</label>
+                        <label><input type="checkbox" name="llenguatges" value="php"> PHP</label>
+                        <label><input type="checkbox" name="llenguatges" value="python"> Python</label>
+                        <label><input type="checkbox" name="llenguatges" value="java"> Java</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="sub-grup">
+                    <legend>Nivell d'anglès</legend>
+                    <div class="opcions-linia">
+                        <label><input type="radio" name="angles" value="a2"> A2</label>
+                        <label><input type="radio" name="angles" value="b1"> B1</label>
+                        <label><input type="radio" name="angles" value="b2"> B2</label>
+                        <label><input type="radio" name="angles" value="c1"> C1</label>
+                    </div>
+                </fieldset>
+
+                <label for="rols">Rols preferits</label>
+                <select id="rols" name="rols" multiple size="4">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="devops">DevOps</option>
+                    <option value="dades">Dades</option>
+                </select>
+
+                <label for="github">URL de GitHub</label>
+                <input type="url" id="github" name="github" placeholder="https://github.com">
+            </fieldset>
+
+            <!-- BOTONS INFERIORS -->
+            <div class="botons-formulari">
+                <button type="reset" class="btn-esborrar">Esborra-ho tot</button>
+                <button type="submit" class="btn-enviar">Envia</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>© 2026 Rares Cernea - Tots els drets reservats</footer>
 </body>
-
-</html>
